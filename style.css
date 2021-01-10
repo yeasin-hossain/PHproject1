@@ -191,3 +191,41 @@ nav {
 }
 
 /* ! end Course */
+@media only screen and (max-width:768px) {
+    .container {
+        width: 90%;
+    }
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:576px) {
+
+    .players,
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .course {
+        width: 70%;
+    }
+
+    .courses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
