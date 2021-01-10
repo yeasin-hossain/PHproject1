@@ -3,7 +3,9 @@
     padding: 0;
 }
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins',
+    sans-serif;
+    background-color: var(--optionalBgColor);
 }
 :root{
     --basicFont:#000;
@@ -42,12 +44,23 @@ body {
         max-width: 900px;
         display: block;
         margin: auto;
+        background-color: var(--mianBgColor);
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 8px;
+        }
+.title {
+    color: var(--lightFont);
+    margin: 25px 0;
 }
 /* ! utilites */
 
 nav {
     height: 95px;
     background-color: var(--lightBgColor);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .nav {
@@ -55,6 +68,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    background-color: var(--lightBgColor);
+    padding: 0;
+    margin: 0 auto;
 }
 
 .nav .logo {
@@ -79,3 +95,99 @@ nav {
 }
 
 /* ! nav */
+
+.players,
+.blogs,
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.player,
+.blog {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+/* ! top players end */
+.blogs {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blogs img {
+    width: 180px;
+    margin-right: 20px;
+}
+
+.blogs p {
+    color: gray;
+    margin-top: 15px;
+}
+
+.blogs span {
+    color: var(--lightFont);
+}
+
+/* ! Blogs end */
+.course {
+    background-color: var(--mianBgColor);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.267);
+    border-radius: 8px;
+    padding: 15px;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+.course .thumbnail {
+    height: 105px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.course .thumbnail img {
+    height: 100%;
+}
+
+.course .info p {
+    color: #F3A291;
+    margin: 10px 0;
+}
+
+.course .detail {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+
+.course .detail .star {
+    color: goldenrod;
+}
+
+.course .detail p,
+.course .detail .star svg:last-child {
+    color: gray;
+}
+
+
+.course .detail span {
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #FF8493;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+/* ! end Course */
