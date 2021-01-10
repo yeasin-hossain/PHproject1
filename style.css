@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
-img{
-    width: 90px;
+
+:root{
+    --basicFont:#000;
+    --optionalFont: #fff;
 }
