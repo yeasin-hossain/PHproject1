@@ -2,8 +2,80 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    font-family: 'Oswald', sans-serif;
+}
 :root{
     --basicFont:#000;
     --optionalFont: #fff;
+    --lightFont:#603BFF;
+
+    --mianBgColor: #FFFFFF;
+    --lightBgColor:#562EFF;
+    --optionalBgColor:#F3F1FF;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--optionalFont);
+    }
+
+    .container {
+        max-width: 900px;
+        display: block;
+        margin: auto;
 }
+/* ! utilites */
+
+nav {
+    height: 95px;
+    background-color: var(--lightBgColor);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav .logo {
+    width: 100px;
+    display: flex;
+    color: var(--optionalFont);
+}
+
+.nav .logo img,
+.nav .menu img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav .logo img {
+    margin-right: 15px;
+}
+
+.nav .menu li {
+    margin: 0 20px;
+}
+
+/* ! nav */
